@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Regal";
+    src: url(./Fuentes/PFRegalDisplayPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Louis";
+    src: url(./Fuentes/Louis-George-Cafe-Light.ttf);
+}
+
+@font-face {
+    font-family: "Louisbold";
+    src: url(./Fuentes/Louis-GeorgeCafe-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Voltaire";
+    src: url(./Fuentes/Voltaire-Frangela.ttf);
+}
+
+@font-face {
+    font-family: "Apple";
+    src: url(./Fuentes/AppleGaramond-Light.ttf);
+}
+
+.banner{
+
+    #imagenbanner{
+        width: 100%;
+        height: 900px;
+        object-fit: cover;
+        object-position: center; 
+    }
+ }
+.contenedor-titulo-principal{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    position: absolute;
+    top: 24px;
+
+
+    .buscador {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        justify-self: right;
+        margin-top: 167px;
+        margin-right: 6vw;
+        border: 1px solid white;
+        align-items: center;
+        border-radius: 50px;
+        
+
+        
+        input{
+            text-decoration: none;
+            color: #FFFFFF;
+            background-color: transparent;
+            padding: 20px 40px;
+            width: fit-content;
+            border: none;
+            font-family: "Louis";
+            font-size: 20px;
+            font-weight: 300;
+
+            &::placeholder {
+                color: #FFFFFF;
+            }
+        }
+
+    }
+
+    .titulo-principal{
+
+        align-self: end;
+        margin-left: 6vw;
+        margin-top: 50px;
+        display: grid;  
+        gap: 10px;
+        
+        h2 {
+            color: #B4B7B7;
+            font-family: "Regal";
+            font-size: 40px;
+            font-weight: 100;
+            
+
+        }
+
+        h1 {
+            color: #FFFFFF;
+            font-family: "Regal";
+            font-size: 80px;
+            font-weight: 500;
+            padding-bottom: 60px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            border: solid 1px;
+            border-radius: 100px;
+            padding: 20px 40px;
+            width: fit-content;
+            font-family: "Louis";
+            font-size: 30px;
+            
+            img{
+                margin-right: 20px;
+                width: 30x 13px;
+            }
+
+        }
+
+    }
+}
+
+nav {
+    width: 100%;
+    height: 123px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.247) ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-family: "Louis"
+
+}
+
+#logo {
+    margin-left: 50px;
+}
+
+#logo-mobile {
+    display: none;
+
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .grey {
+        color: #7E7E7E;
+    }
+
+    .registros {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr;
+
+        a {
+            justify-self: center;
+        }
+
+        #bar {
+            height: 100%;
+            width: 1px;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+    }
+
+    .idi{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        margin-right: 50px
+
+    }
+}
+
+.redessociales{
+
+    display: grid;
+    width: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 90px 30px 30px 30px 30px 30px;
+    justify-items: center;
+    position: absolute;
+    top: 250px;
+    position: fixed;
+
+    p{
+
+        transform: rotate(90deg);
+        display: inline-block;
+        font-family: "Louisbold";
+        font-size: 20px;
+        font-weight: 900;
+        color: rgba(126, 126, 126, 1);
+        margin:auto
+
+    }
+    #rayafollow{
+        height: 75px;
+        width: 2px;
+        background-color: #7E7E7E;
+    }
+    img{
+        display: block;
+        margin-top: 10px;
+        
+    }
+    
+}
+
+.seccion-properties-forsale{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top:100px;
+
+    #galeria1{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+        
+
+        img{
+            width: 100%;
+           
+        }
+
+        .mediafoto{
+            grid-column: span 2;
+            height: 100vh;
+            overflow-x: hidden;
+            object-fit: cover;
+        
+        }
+
+        .iguales{
+            grid-column: span 5;
+            
+            .titulopais1{
+
+                transform: translatey(-120%);
+                margin-left: 2vw;
+
+                h3{
+                    font-family: "Regal";
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: rgba(255, 255, 255, 1);
+                }
+
+                h4{
+                    font-family: "Regal";
+                    font-weight: 500;
+                    font-size: 30px;
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+
+            .titulopais2{
+
+                transform: translatey(-100%);
+                background-color: #FFFFFF;
+                background-size: 100%;
+                padding: 1vw;
+
+                h3{
+                    font-family: "Regal";
+                    font-weight: 400;
+                    font-size: 20px;
+                    color: rgba(70, 69, 71, 1);
+                }
+
+                h4{
+                    font-family: "Regal";
+                    font-weight: 500;
+                    font-size: 30px;
+                    color: rgba(0, 0, 0, 1);
+                }
+
+            }
+            
+        }
+
+    
+    }
+
+    #titulos-properties{
+        display: grid;
+        padding-left: 180px;
+        
+        .subtitle-properties{
+            text-align: right;
+            margin-right: 5vw;
+
+            h3{
+                font-family: "Regal";
+                font-weight: 400;
+                font-size: 30px;
+                color: rgba(223, 153, 27, 1);
+            }
+
+            h4{
+                font-family: "Regal";
+                font-weight: 500;
+                font-size: 50px;
+                color: rgba(0, 0, 0, 1);
+            }
+
+            }
+        
+        .boton-properties{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding-right: 4vw;
+
+
+            .direcciones{
+
+                background-color: transparent;
+                border: none;
+                
+                
+            }
+
+            .prev{
+                color: rgba(180, 183, 183, 1);
+            }
+
+            .next{
+                color: rgba(223, 153, 27, 1);
+            }
+
+            .botoncentro{
+                background-color: transparent;
+                border-radius: 50px;
+                height: fit-content;
+                padding: 24px;
+                font-family:"Louis";
+                font-size: 18px;
+                font-weight: 600;
+
+            }
+        }
+        
+    }
+}
+
+.Titulos-sec-luxury{
+    justify-items: center;
+    
+    h3{
+        font-family: "Regal";
+        font-weight: 400;
+        font-size: 40px;
+        color: rgba(223, 153, 27, 1);
+    }
+    h4{
+        font-family: "Regal";
+        font-weight: 500;
+        font-size: 80px;
+        color: rgba(0, 0, 0, 1);
+    }
+}

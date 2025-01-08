@@ -1,0 +1,172 @@
+/* Desktop */
+@media (max-width: 900px) {
+    #logo {
+        display: none;
+    }
+    #logo-mobile{
+        display: inline;
+        margin-left: 50px;
+    }
+    nav{
+        .links {
+
+            grid-template-columns: 1fr;
+
+            .idi{
+                grid-template-columns: 1fr;
+                justify-items: end;
+        
+                a{
+                    display: none;
+                    
+                }
+            }
+            .registros {
+                display: none;
+            }
+
+        }
+        
+    }
+}
+
+/* Mobile */
+
+@media (max-width:450px) {
+
+    body {
+
+        nav{
+            .links{
+                #hamburguesa{
+                    margin-right: 5%;
+                }
+            }
+        }
+
+        .contenedor-titulo-principal{
+
+            .buscador{
+                margin-bottom: 200px;
+            }
+
+
+            .titulo-principal{
+
+                h2 {
+                    font-size: 40px;
+                }    
+
+                h1 {
+                    font-size: 60px;
+                }
+
+                a{
+                    font-size: 20px;
+                }
+            
+            }
+        }
+
+        .redessociales{
+            display: none;
+        }
+
+        .seccion-properties-forsale{
+            grid-template-columns: 1fr;
+
+            #galeria1{
+
+                .mediafoto{
+                    display: none;
+                }
+
+                .england{
+                    grid-column: span 10;
+                }
+
+                .france{
+                    grid-column: span 2;
+                }
+    
+                .iguales{
+
+                    .titulopais1{
+                        display: none; 
+                    }
+                    
+                    .titulopais2{
+                        display: none; 
+                    }
+                      
+               }
+
+            }
+    
+                #titulos-properties {
+                    
+                        display: none;
+                
+                }
+            
+        
+        }
+
+        .Titulos-sec-luxury{
+            h3{
+               display: none; 
+            }
+            h4{
+                font-size: 40px;
+            }
+        }
+}
+}
+
+@media (max-width:380px) {
+    body{
+        .banner{
+            .contenedor-titulo-principal{
+                    .buscador{
+                        margin-bottom: 200px;
+                        input{
+                            font-size: 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+@media (max-width:320px){
+    body{
+        .banner{
+            .contenedor-titulo-principal{
+                .buscador{
+                 margin-right: 4vw;
+                 margin-bottom: 200px;
+                }
+
+                .titulo-principal{
+                    
+                    h2{
+                        font-size: 30px;
+                        padding-top: 1px;
+
+                    }
+                    
+                    h1{
+                        font-size: 40px;
+                        padding-bottom: 50px;
+                    }
+
+                    a{
+                        font-size:18px;
+                    }
+
+                }
+            }
+        }
+    }
+}
