@@ -1,32 +1,208 @@
 /* Desktop */
+@media (max-width:1000px) {
+    .section-Worldwide-gallery {
+        #galeria {
+            .titulopais {
+                h3 {
+                    font-size: 16px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .Titulos-sec-luxury {
+        h3 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 60px;
+        }
+
+    }
+
+    .section-luxury-properties {
+
+        .propertiesname {
+
+            padding-left: 10px;
+            padding-top: 20px;
+
+            h3 {
+                font-size: 12px;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    footer {
+        .CTA {
+            #Join {
+                padding-left: 70px;
+            }
+        }
+
+        .enlaces {
+
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+    }
+}
+
 @media (max-width: 900px) {
     #logo {
         display: none;
     }
-    #logo-mobile{
+
+    #logo-mobile {
         display: inline;
         margin-left: 50px;
     }
-    nav{
+
+    nav {
         .links {
 
             grid-template-columns: 1fr;
 
-            .idi{
+            .idi {
                 grid-template-columns: 1fr;
                 justify-items: end;
-        
-                a{
+
+                a {
                     display: none;
-                    
+
                 }
             }
+
             .registros {
                 display: none;
             }
 
         }
-        
+
+    }
+
+    .section-Worldwide-gallery {
+        #titulos {
+            .subtitle-properties {
+                h3 {
+                    font-size: 25px;
+                }
+
+                h4 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+
+    .redessociales {
+        display: none;
+    }
+
+    .section-Worldwide-gallery {
+        .titulopais {
+            display: none;
+        }
+
+        #titulos {
+            .subtitle-properties {
+                h3 {
+                    font-size: 15px;
+                }
+
+                h4 {
+                    font-size: 30px;
+                }
+
+            }
+
+
+            .boton-properties {
+
+                padding-right: 0px;
+                padding-left: 20px;
+
+                .botoncentro {
+                    padding: 9px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+
+    }
+
+    .section-luxury-properties {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .propertiesname {
+
+            padding-left: 10px;
+            padding-top: 20px;
+
+            h3 {
+                font-size: 15px;
+            }
+
+            h4 {
+                font-size: 25px;
+            }
+        }
+
+    }
+
+    footer {
+
+        height: auto;
+
+        .CTA {
+            display: none;
+        }
+
+        .enlaces {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 7%;
+
+            #colum1 {
+                grid-column: span 2;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+
+            #colum3 {
+                #contact {
+                    margin-top: 0;
+                }
+            }
+
+            #colum4 {
+                grid-column: span 2;
+                margin-top: 30px;
+                text-align: left;
+                margin-bottom: 50px;
+            }
+        }
+
+        .copyr {
+            display: none;
+        }
+
+
     }
 }
 
@@ -36,133 +212,214 @@
 
     body {
 
-        nav{
-            .links{
-                #hamburguesa{
+        nav {
+            .links {
+                #hamburguesa {
                     margin-right: 5%;
                 }
             }
         }
 
-        .contenedor-titulo-principal{
+        .rayitasbanner {
+            display: grid;
+            grid-template-columns: 3fr 1fr 1fr 1fr 3fr;
+            position: relative;
+            top: -15vh;
+        }
 
-            .buscador{
+        .contenedor-titulo-principal {
+
+            .buscador {
                 margin-bottom: 200px;
             }
 
 
-            .titulo-principal{
+            .titulo-principal {
+
+                align-self: center;
+                margin-right: 30px;
+
 
                 h2 {
                     font-size: 40px;
-                }    
+                }
 
                 h1 {
                     font-size: 60px;
                 }
 
-                a{
+                a {
                     font-size: 20px;
+                    justify-self: center;
+                    width: 100%;
                 }
-            
+
             }
         }
 
-        .redessociales{
+        .section-Worldwide-gallery {
+            #titulos {
+                display: none;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-top: 50px;
+
+            .subtitle-properties-mobile {
+                display: grid;
+                grid-template-columns: 1fr 6fr;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: "Louis";
+                    font-size: 20px;
+                    color: rgba(223, 153, 27, 1);
+                }
+
+            }
+
+            .propiedades {
+                width: 65vw;
+            }
+
+            .titulopais {
+                display: none;
+            }
+
+            #titulos {
+                .subtitle-properties {
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    h4 {
+                        font-size: 30px;
+                    }
+                }
+
+                .Titulos-sec-luxury {
+                    h3 {
+                        display: none;
+                    }
+
+                    h4 {
+                        font-size: 30px;
+                    }
+                }
+
+                .section-luxury-properties {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    padding-left: 1px;
+
+                    .propertiesname {
+                        display: none;
+                    }
+                }
+
+
+
+            }
+        }
+
+        .Titulos-sec-luxury {
+            display: none;
+
+        }
+
+        .Titulos-luxury-mobile {
+            display: block;
+            margin-top: 87px;
+
+            h3 {
+                font-family: "Regal";
+                font-weight: 400;
+                font-size: 25px;
+                color: rgba(223, 153, 27, 1);
+            }
+
+            h4 {
+                font-family: "Regal";
+                font-weight: 500;
+                font-size: 49px;
+                color: rgba(0, 0, 0, 1);
+            }
+
+        }
+
+        .section-luxury-properties {
             display: none;
         }
 
-        .seccion-properties-forsale{
+        .luxurymobile {
+            display: grid;
             grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 50px;
 
-            #galeria1{
 
-                .mediafoto{
-                    display: none;
-                }
-
-                .england{
-                    grid-column: span 10;
-                }
-
-                .france{
-                    grid-column: span 2;
-                }
-    
-                .iguales{
-
-                    .titulopais1{
-                        display: none; 
-                    }
-                    
-                    .titulopais2{
-                        display: none; 
-                    }
-                      
-               }
-
+            img {
+                width: 85vw;
             }
-    
-                #titulos-properties {
-                    
-                        display: none;
-                
-                }
-            
-        
+
         }
-
-        .Titulos-sec-luxury{
-            h3{
-               display: none; 
-            }
-            h4{
-                font-size: 40px;
-            }
-        }
-}
+    }
 }
 
 @media (max-width:380px) {
-    body{
-        .banner{
-            .contenedor-titulo-principal{
-                    .buscador{
-                        margin-bottom: 200px;
-                        input{
-                            font-size: 15px;
-                        }
+    body {
+        .rayitasbanner {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+            position: relative;
+            top: -15vh;
+        }
 
+        .banner {
+            .contenedor-titulo-principal {
+
+                .titulo-principal {
+                    margin-right: 15px;
+                }
+
+                .buscador {
+                    margin-bottom: 200px;
+
+                    input {
+                        font-size: 15px;
                     }
+
                 }
             }
         }
     }
+}
 
-@media (max-width:320px){
-    body{
-        .banner{
-            .contenedor-titulo-principal{
-                .buscador{
-                 margin-right: 4vw;
-                 margin-bottom: 200px;
+@media (max-width:320px) {
+    body {
+        .banner {
+            .contenedor-titulo-principal {
+                .buscador {
+                    margin-right: 4vw;
+                    margin-bottom: 200px;
                 }
 
-                .titulo-principal{
-                    
-                    h2{
+                .titulo-principal {
+
+                    h2 {
                         font-size: 30px;
                         padding-top: 1px;
 
                     }
-                    
-                    h1{
+
+                    h1 {
                         font-size: 40px;
                         padding-bottom: 50px;
                     }
 
-                    a{
-                        font-size:18px;
+                    a {
+                        font-size: 18px;
                     }
 
                 }
