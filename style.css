@@ -222,9 +222,9 @@ nav {
 
 .rayitasbanner {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+    grid-template-columns: 8fr 1fr 1fr 1fr 8fr;
     position: relative;
-    top: -25vh;
+    top: -18vh;
     width: 100%;
 
     .cuadrito {
